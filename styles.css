@@ -3,6 +3,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 6fr;
     grid-template-rows: 1fr 6fr;
+    font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -12,12 +13,24 @@ header {
 
 .header-top {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+input {
+    height: 25px;
+    width: 600px;
+    background-color: #E2E8F0;
+    border: none;
+    border-radius: 15px;
 }
 
 .header-lower {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1.5fr 1fr;
 }
 
 .sidebar {
@@ -25,6 +38,23 @@ header {
     grid-column: 1 / 2;
     background-color: #1992D4;
     color: white;
+    padding-left: 20px;
+}
+
+.sidebar > h1 {
+    margin-bottom: 50px;
+    padding-left: 30px;
+}
+
+.side-main-options {
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.side-extra-options {
+    font-size: 20px;
+    font-weight: 500;
 }
 
 main {
